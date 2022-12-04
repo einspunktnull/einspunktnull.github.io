@@ -1,0 +1,202 @@
+/*-------------------------------------------------------
+
+ Allgemeines und Grundsaetzliches
+
+ -------------------------------------------------------*/
+html, body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+}
+body {
+	overflow: hidden;
+}
+.clear-float {
+	clear: both;
+	margin: 0px;
+	height: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.float-left {
+	display: block;
+	float: left;
+}
+.float-right {
+	display: block;
+	float: right;
+}
+table, tbody, tr {
+	margin: 0px;
+	border-width: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+}
+td {
+	margin: 0px;
+	border-width: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6, h7, h8, h9, p {
+	margin: 0px;
+	padding: 0px;
+}
+img {
+	border: 0px;
+}
+ul, li {
+	margin: 0px;
+	padding: 0px;
+}
+ul {
+	list-style-type: none;
+}
+/*
+a:active {
+	text-decoration: expression(hideFocus='true');
+}
+a:focus {
+	-moz-outline-style: none;
+}
+*/
+/*-------------------------------------------------------
+ *
+ * FONT-FICKE
+ -------------------------------------------------------*/
+@font-face {
+	font-family: 'DroidSansRegular';
+	src: url('_res/fonts/DroidSans-webfont.eot');
+	src: url('_res/fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'), url('_res/fonts/DroidSans-webfont.woff') format('woff'), url('_res/fonts/DroidSans-webfont.ttf') format('truetype'), url('_res/fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DroidSansBold';
+	src: url('_res/fonts/DroidSans-Bold-webfont.eot');
+	src: url('_res/fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('_res/fonts/DroidSans-Bold-webfont.woff') format('woff'), url('_res/fonts/DroidSans-Bold-webfont.ttf') format('truetype'), url('_res/fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*-------------------------------------------------------
+ -------------------------------------------------------*/
+a {
+	color: black;
+}
+a:hover {
+}
+a:visited {
+}
+body, div, h1, h2, h3, h4, h5, h6, h7, h8, h9, p, td, li, input, textarea, select, button {
+	font-family: 'DroidSansRegular', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 130%;
+	color: black;
+}
+h1 {
+	font-family: 'DroidSansBold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+/*-------------------------------------------------------
+ -------------------------------------------------------*/
+/*
+ *
+ * <!-- http://css-tricks.com/3458-perfect-full-page-background-image/ -->
+ *
+ body {
+ background: url('_css/_gfx/bg/level0-001.jpg') no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='._css/_gfx/bg/level0-001.jpg', sizingMethod='scale');
+ -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=''_css/_gfx/bg/level0-001.jpg', sizingMethod='scale')";
+ }
+ */
+
+div#bg {
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -999;
+	min-height: 100%;
+	min-width: 100%;
+}
+div#bg img {
+	left: 0;
+	margin: auto;
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+div#raster {
+	background-image: url("img/raster_tile_big.png");
+	background-attachment: fixed;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+div#content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+div#fallback {
+	margin: 0 auto;
+	width:817px;
+	height:100%;
+}
+div#fallback img{
+	margin-top: 40%;
+}
+div#footerContainer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	z-index: 10;
+}
+div#footer {
+	position: relative;
+	width: 840px;
+	height: 125px;
+	margin: 0 auto;
+	font-family: 'DroidSansBold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+
+.shadowed{
+	text-shadow: 3px 3px 5px #999;
+	-webkit-text-shadow: 3px 3px 5px #999;
+	-moz-text-shadow: 3px 3px 5px #999;
+}
+
+#adresse {
+	position: absolute;
+	left: 120px;
+	top: 8px;
+}
+#development {
+	position: absolute;
+	right: 220px;
+	top: 8px;
+}
+#visComm {
+	position: absolute;
+	right: 0px;
+	top: 8px;
+}
+
